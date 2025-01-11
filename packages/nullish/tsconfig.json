@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib",
+        "declaration": true,
+        "declarationMap": true,
+        "strict": true,
+        "allowJs": true,
+        "checkJs": false,
+        "noEmit": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "moduleDetection": "force",
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "verbatimModuleSyntax": true,
+        "noImplicitThis": true,
+        "noUncheckedIndexedAccess": true,
+    }
+}

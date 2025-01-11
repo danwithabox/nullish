@@ -1,0 +1,55 @@
+{
+    "name": "@danwithabox/nullish",
+    "description": "Utilities that pair well with the lovely nullish coalescing (??) operator",
+    "version": "0.0.0",
+    "type": "module",
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "keywords": [
+        "nullish",
+        "coalescing",
+        "null",
+        "undefined",
+        "nullish-map",
+        "nullish-of"
+    ],
+    "author": "danwithabox <danwithabox@gmail.com> (https://github.com/danwithabox)",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danwithabox/nullish.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "main": "./lib/index.cjs",
+    "module": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "exports": {
+        ".": {
+            "require": {
+                "types": "./lib/index.d.cts",
+                "default": "./lib/index.cjs"
+            },
+            "import": {
+                "types": "./lib/index.d.ts",
+                "default": "./lib/index.js"
+            }
+        }
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "prepublishOnly": "publint",
+        "build": "tsup && publint",
+        "type-check": "tsc --noEmit && echo type-check ✅"
+    },
+    "devDependencies": {
+        "publint": "^0.3.0",
+        "tsup": "^8.3.5",
+        "type-fest": "^4.32.0",
+        "typescript": "^5.7.3"
+    }
+}

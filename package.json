@@ -1,0 +1,31 @@
+{
+    "name": "@danwithabox/nullish-monorepo",
+    "private": true,
+    "type": "module",
+    "author": "danwithabox <danwithabox@gmail.com> (https://github.com/danwithabox)",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danwithabox/nullish.git"
+    },
+    "scripts": {
+        "prepack": "publint",
+        "prepublishOnly": "publint",
+        "prepare": "husky || true",
+        "build": "npm run build --workspaces --if-present",
+        "test": "npm run test --workspaces --if-present",
+        "type-check": "npm run type-check --workspaces --if-present",
+        "changeset:help": "echo You probably want to run `npx changeset`. Check out `.changeset/README.md` for more."
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.27.9",
+        "@commitlint/cli": "^19.5.0",
+        "@commitlint/config-conventional": "^19.5.0",
+        "@danwithabox/eslint-entree": "^0.5.2",
+        "husky": "^9.1.6",
+        "tsx": "^4.19.1"
+    },
+    "workspaces": [
+        "packages/*"
+    ]
+}
