@@ -1,7 +1,7 @@
 {
     "name": "@danwithabox/nullish",
     "description": "Utilities that pair well with the lovely nullish coalescing (??) operator",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "type": "module",
     "engines": {
         "node": ">=20.0.0"
